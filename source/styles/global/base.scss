@@ -1,0 +1,47 @@
+body {
+  font-family: $ff-main;
+  font-size: 1rem;
+  line-height: 1.2;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.clearfix {
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+
+  @media (max-width: 390px) {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.error {
+  border-color: red;
+}

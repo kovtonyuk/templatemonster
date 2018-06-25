@@ -1,0 +1,96 @@
+.header {
+  position: relative;
+  padding-bottom: 150px;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg,
+            rgba(100, 86, 110, 0.45),
+            rgba(50, 62, 83, 0.84)
+    ), url(../images/bg-header.jpg) right/cover no-repeat;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+    .logo {
+      margin-top: 37px;
+      font-family: $ff-main-bold;
+      color: #bddfef;
+      font-size: 2rem;
+    }
+
+    @media (max-width: 430px) {
+      display: block;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.contacts {
+  padding-top: 35px;
+  margin-left: 50px;
+
+  @media (max-width: 650px) {
+    padding-top: 12px;
+  }
+
+  @media (max-width: 430px) {
+    margin: 0;
+  }
+}
+
+.contact {
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 10px 8px;
+  color: #bddfef;
+  transition: 0.3s;
+  text-decoration: none;
+
+  @media (max-width: 650px) {
+    display: block;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    letter-spacing: -0.3px;
+  }
+
+  &:hover {
+    color: #ecebf0;
+  }
+
+  &__icon {
+    margin-right: 11px;
+    margin-top: -2px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+
+    &--email {
+      font-size: 1.2rem;
+      margin-right: 8px;
+      margin-top: -1px;
+    }
+  }
+}
+
+.facebook-icon {
+  display: inline-block;
+  margin: 7px 3px;
+  padding: 6px 8px 1px;
+  border-radius: 3px;
+  background-color: #1287bf;
+  color: #fff;
+}

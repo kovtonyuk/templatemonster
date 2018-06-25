@@ -1,0 +1,67 @@
+.program {
+  padding: 50px;
+  text-align: center;
+  color: #323e53;
+
+  &_hr {
+    height: 2px;
+    background: #323e53;
+  }
+
+  .accordion {
+    margin-bottom: 30px;
+
+    .title__header {
+      margin-top: 50px;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    &__header {
+      margin: 20px 0 9px 0;
+      font-size: 1.375rem;
+      font-family: $ff-main-bold;
+    }
+
+    dt {
+      padding: 20px 30px;
+      background: #607da3;
+      border-radius: 5px;
+      margin-bottom: 10px;
+
+      &:hover {
+        background: lighten(#607da3, 13%);
+      }
+
+      a {
+        font-family: $ff-main-bold;
+        text-transform: uppercase;
+        display: block;
+        font-weight: bold;
+        color: #252d3d;
+      }
+    }
+
+    dd {
+      padding: 10px;
+      a {
+        display: block;
+        font-weight: bold;
+      }
+    }
+
+    div {
+      border-top: 0;
+      font-size: 12px;
+      &:last-of-type {
+        border-top: 1px solid white;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.icon {
+  margin: auto auto 23px auto;
+}
+
+.icon-book {
+  @include sprite($book);
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-smile {
+  @include sprite($smile);
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-heart {
+  @include sprite($heart);
+  margin-bottom: 27px;
+  height: 94px;
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-mind {
+  @include sprite($mind);
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-people {
+  @include sprite($people);
+  margin-bottom: 25px;
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-planet {
+  @include sprite($planet);
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-pointer {
+  @include sprite($pointer);
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-shield {
+  @include sprite($shield);
+  margin-bottom: 26px;
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-stress {
+  @include sprite($stress);
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-study {
+  @include sprite($study);
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-watch {
+  @include sprite($watch);
+  margin-bottom: 29px;
+  transition: all ease-in-out 1s;
+
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}

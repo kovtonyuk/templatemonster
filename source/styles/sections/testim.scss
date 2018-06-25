@@ -1,0 +1,138 @@
+.testimonials {
+  padding: 99px 0 50px;
+  text-align: center;
+  color: #bddfef;
+  background: #323e53;
+
+  .name__testim {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .all_slider {
+    position: relative;
+    height: 450px;
+
+    @media (max-width: 600px) {
+      height: 500px;
+    }
+
+    @media (max-width: 500px) {
+      height: 550px;
+    }
+
+    @media (max-width: 420px) {
+      height: 650px;
+    }
+
+    @media (min-width: 351px) and (max-width: 419px) {
+      height: 680px;
+    }
+
+    @media (min-width: 320px) and (max-width: 350px) {
+      height: 760px;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+    width: 1px;
+    /* Setting this to 0 make it invisible for VoiceOver */
+    height: 1px;
+    /* Setting this to 0 make it invisible for VoiceOver */
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  label {
+    display: inline-block;
+    width: 10%;
+    margin-bottom: 15px;
+    border: 4px solid #bddfef;
+    cursor: pointer;
+    transition: border-color 0.3s linear;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 30px;
+    background-color: #3f3446;
+    color: #c6bfd2;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.6s linear;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+    &:after {
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      top: 100%;
+      border: solid transparent;
+      border-top-color: #3f3446;
+      border-left-color: #3f3446;
+      border-width: 10px;
+      left: 10%;
+    }
+
+    img {
+      width: 170px;
+      height: auto;
+    }
+  }
+
+  .quotes {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 5em;
+  }
+
+  .leftq {
+    top: -25px;
+    left: 5px;
+  }
+
+  .rightq {
+    bottom: -10px;
+    right: 5px;
+  }
+
+  img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  .slide {
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.6s ease-in;
+  }
+
+  #first:checked ~ label.first,
+  #second:checked ~ label.second,
+  #third:checked ~ label.third,
+  #four:checked ~ label.four,
+  #five:checked ~ label.five {
+    border: 6px solid #3f3446;
+  }
+
+  #first:checked ~ div.one, #second:checked ~ div.two, #third:checked ~ div.three, #four:checked ~ div.four, #five:checked ~ div.five  {
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+
+

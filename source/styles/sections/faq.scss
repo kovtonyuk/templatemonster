@@ -1,0 +1,241 @@
+.faq__section {
+  padding: 100px 0 110px 0;
+  color: #d3dbf6;
+  background-color: #506684;
+
+  @media (min-width: 320px) and (max-width: 810px) {
+    padding: 50px 0 55px 0;
+  }
+
+  .title {
+    margin-bottom: 50px;
+
+    @media (max-width: 700px) {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  .title__header {
+    font-size: 2.25rem;
+  }
+
+  .btn-down {
+    position: relative;
+    margin: auto auto 20px;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #d3dbf6;
+    border-radius: 50%;
+  }
+
+  .arrow-down {
+    @include centerer-xy();
+
+    padding: 20px;
+    color: #d3dbf6;
+
+    .fa {
+      font-size: 2.5rem;
+    }
+  }
+
+  .form__header {
+    margin: 0 0 25px;
+    font-size: 1.5rem;
+    font-family: $ff-main-bold;
+    text-align: center;
+
+    @media (max-width: 580px) {
+      padding-right: 50px;
+    }
+  }
+}
+
+.form {
+  position: relative;
+  width: 67%;
+  margin: auto;
+  padding: 40px 50px 66px 50px;
+  border-radius: 3px;
+  color: #323e53;
+  text-align: center;
+  background-color: #fff;
+
+  @media (min-width: 320px) and (max-width: 810px) {
+    width: 80%;
+    padding: 25px;
+  }
+
+  &-container {
+    padding-top: 30px;
+  }
+
+  &:before {
+    @include centerer-x();
+
+    content: '';
+    border: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    top: -59px;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: -28px;
+    right: -16px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: #408fb4;
+    transition: 0.3s;
+
+    &:hover {
+      background: lighten(#408fb4, 10%);
+    }
+  }
+
+  &__text {
+    margin-bottom: 33px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  &__fields {
+    margin-bottom: 32px;
+  }
+
+  &__input {
+    width: 76%;
+    display: block;
+    margin: auto auto 8px auto;
+    padding: 18px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 0.875rem;
+
+    @media (min-width: 320px) and (max-width: 810px) {
+      width: 100%;
+    }
+
+    &:focus {
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .button {
+    padding: 15px 30px;
+    border: none;
+  }
+}
+
+.nav-wrapper {
+  max-width: 600px;
+  margin: auto auto 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  @media (max-width: 600px) {
+    margin: 30px;
+  }
+}
+
+/* ul-reset */
+.ul-reset {
+  padding-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* jQuery Accordion Navigation Menu */
+.nav-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.nav-item-inner {
+  > a {
+    display: block;
+    text-decoration: none;
+    color: #d3dbf6;
+    text-transform: uppercase;
+
+    @media (max-width: 600px) {
+      padding: 10px 0;
+    }
+  }
+}
+
+.nav-item-inner-heading {
+  position: relative;
+  padding: .75rem;
+  padding-right: 2.5rem;
+  font-weight: 700;
+  &:focus {
+    opacity: 1;
+  }
+  &.minus:after,
+  &.plus:after {
+    position: absolute;
+    top: 50%;
+    right: .75rem;
+    transform: translateY(-50%);
+    width: 1rem;
+    text-align: center;
+    font-family: $fontawesome;
+    font-style: normal;
+    font-size: .9rem;
+    color: #d3dbf6;
+  }
+  &.minus:after {
+    content: "\f068";
+  }
+  &.plus:after {
+    content: "\f067";
+  }
+
+  .faq__header {
+    margin: 0;
+    font-size: 1rem;
+    font-family: $ff-main-bold;
+
+    @media (max-width: 580px) {
+      padding-right: 50px;
+    }
+  }
+}
+
+.nav-sub-list {
+  display: none;
+  font-size: .8rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.nav-sub-list-inner {
+  padding: 0 .75rem .75rem;
+
+  p {
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 2;
+  }
+}
+
+.nav-sub-item {
+  padding-left: .75rem;
+  margin-top: .375rem;
+  &:first-child {
+    margin-top: 0;
+    font-style: italic;
+  }
+}

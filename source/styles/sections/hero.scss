@@ -1,0 +1,46 @@
+.hero {
+  text-align: center;
+  color: #bddfef;
+
+  @media (max-width: 1080px) {
+    position: relative;
+    text-align: center;
+    top: 0;
+  }
+
+  &__about {
+    font-family: $ff-main-bold;
+    font-size: 5rem;
+    line-height: 0.3;
+
+    @media (max-width: 390px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-family: $ff-main-bold;
+
+    &:first-child {
+      font-family: $ff-main-bold;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 599px) {
+    padding: 0 20px;
+    min-height: inherit;
+  }
+
+  .button--text-uppercase {
+    padding: 21px 41px;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.45rem;
+    font-family: $ff-main-bold;
+  }
+
+}

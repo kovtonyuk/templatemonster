@@ -1,0 +1,108 @@
+.price {
+  padding: 99px 0 105px 0;
+  text-align: center;
+  color: #323e53;
+
+  @media (max-width: 985px) {
+    padding: 40px 0 20px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 42px;
+
+    @media (max-width: 980px) {
+      justify-content: center;
+      padding: 0 25px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 30%;
+    padding: 26px;
+
+    &:hover {
+      box-shadow: 0 0 30px #408fb4;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 980px) {
+      width: 80%;
+      margin: 0 20px 40px 20px;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 400px) {
+      width: 100%;
+      margin: 0 5px 40px;
+    }
+
+    .recommend {
+      position: absolute;
+      font-family: $ff-main-light;
+      font-size: 1rem;
+      transform: rotate(-45deg);
+      top: 0;
+      left: -20px;
+      color: #bddfef;
+      background: #1b3865;
+      padding: 10px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+  }
+  
+  &__header {
+    margin: 0 0 9px 0;
+    font-size: 1.375rem;
+    font-family: $ff-main-bold;
+
+    &-message {
+      margin-right: 7px;
+    }
+
+    &-book {
+      margin-right: 3px;
+    }
+  }
+
+  &__description {
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: left;
+    padding-bottom: 30px;
+
+    @media (max-width: 980px) {
+      padding: 0 20px 30px;
+    }
+  }
+}
+
+.button--text-uppercase {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-family: $ff-main-bold;
+}
+
+.total--good {
+  color: #408fb4;
+}
+
+.total--best {
+  margin-top: 40px;
+  color: #408fb4;
+}
+
+.total--premium {
+  margin-top: 18px;
+  color: #408fb4;
+}

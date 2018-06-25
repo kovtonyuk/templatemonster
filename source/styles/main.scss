@@ -1,0 +1,26 @@
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "global/mixins";
+@import "global/fonts";
+@import "global/vars";
+@import "global/base";
+@import "global/common";
+@import "global/sprite";
+@import "global/icons";
+@import "global/button";
+
+@import "sections/header";
+@import "sections/hero";
+@import "sections/experience";
+@import "sections/get";
+@import "sections/price";
+@import "sections/how";
+@import "sections/program";
+@import "sections/info";
+@import "sections/coach";
+@import "sections/guarantees";
+@import "sections/testim";
+@import "sections/faq";
+@import "sections/footer";
+@import "sections/title";

@@ -1,0 +1,36 @@
+{
+  "name": "vita_plus",
+  "version": "1.0.0",
+  "description": "* Убедитесь, что установлены node.js и npm. Для этого достаточно написать в терминале:",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kovtonyuk/vita_plus.git"
+  },
+  "author": "Serhii Kovtoniuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kovtonyuk/vita_plus/issues"
+  },
+  "homepage": "https://github.com/kovtonyuk/vita_plus#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "font-awesome": "^4.7.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.9.0",
+    "normalize.scss": "^0.1.0",
+    "npm": "^6.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {}
+}
